@@ -1,0 +1,21 @@
+.contact {
+    padding-block: 6rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.success {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 500px;
+    height: 500px;
+    background-color: skyblue;
+    color: #fff;
+    margin: 1rem;
+}

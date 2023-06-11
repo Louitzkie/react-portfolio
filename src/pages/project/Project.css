@@ -1,0 +1,15 @@
+.project {
+    padding-block: 6rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.project-card {
+    background-color: skyblue;
+    padding: 1rem;
+    border-radius: 0.3rem;
+}

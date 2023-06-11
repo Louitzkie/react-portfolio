@@ -1,0 +1,17 @@
+.service {
+    padding-block: 4rem;
+    position: relative;
+}
+
+.cards {
+    display: flex;
+    gap: 1rem;
+}
+
+.card {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    z-index: 999;
+}

@@ -1,0 +1,36 @@
+.about-me {
+    padding-block: 4rem;
+    background-color: #000;
+    color: #fff;
+}
+
+.about-me .flex {
+    display: flex;
+}
+
+.about-me__content {
+    width: min(65ch, 100% - 4rem);
+}
+
+.cv {
+    background-color: skyblue;
+    color: #fff;
+    padding: 0.5em 1em;
+    display: inline-block;
+}
+
+.about-me__skills ul,
+.about-me__tools ul {
+    padding-inline: 0;
+    margin-right: 2rem;
+}
+
+.about-me__skills li::marker,
+.about-me__tools li::marker {
+    color: skyblue;
+    font-size: 1.3rem;
+}
+
+.about-me__skills {
+    margin-right: 2rem;
+}
