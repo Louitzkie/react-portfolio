@@ -1,6 +1,6 @@
 .about-me {
     padding-block: 4rem;
-    background-color: #000;
+    background-color: var(--DarkBlue-dark);
     color: #fff;
 }
 

@@ -1,6 +1,5 @@
 .header {
-    background-color: skyblue;
-    color: #fff;
+    background-color: var(--DarkBlue-light);
     padding-block: 1rem;
 }
 
@@ -24,6 +23,19 @@
     content: " />";
 }
 
+.navBtn {
+    z-index: 9999;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: 250ms ease-in-out;
+}
+
+.navBtn:hover {
+    transform: scale(1.1);
+}
+
 .navUl {
     position: fixed;
     top: 0;
@@ -43,12 +55,12 @@
     transition: all 250ms ease-out;
 }
 
-.navUl.active {
+.navOpen {
     right: 0;
 }
 
 @media (min-width: 45rem) {
-    .hamburger {
+    .navBtn {
         display: none;
     }
     .navUl {

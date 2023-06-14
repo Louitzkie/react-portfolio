@@ -1,7 +1,6 @@
 .footer {
     padding-block: 1rem;
-    background-color: #000;
-    color: #fff;
+    background-color: var(--DarkBlue-light);
 }
 
 .footer .flex {

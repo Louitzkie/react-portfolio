@@ -1,3 +1,19 @@
+:root {
+    --DarkBlueIntro: hsl(217, 28%, 15%);
+    --DarkBlueBg: hsl(218, 28%, 13%);
+    --DarkBlue-light: hsl(216, 53%, 9%);
+    --DarkBlue-dark: hsl(219, 30%, 18%);
+
+    /* ### Accent */
+    --lightgray: rgb(168, 168, 168);
+    --Cyan: hsl(176, 68%, 64%);
+    --Blue: hsl(198, 60%, 50%);
+    --LightRed: hsl(0, 100%, 63%);
+
+    /* ### Neutral */
+    --White: hsl(0, 0%, 100%);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -25,7 +41,8 @@ body {
     font-size: 1.125rem;
     line-height: 1.6;
     font-weight: 400;
-    color: #333;
+    background-color: var(--DarkBlueBg);
+    color: var(--White);
 }
 
 .container {

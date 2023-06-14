@@ -1,8 +1,14 @@
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
+    const [click, setClick] = useState(false);
+
+    const handleClick = () => setClick(!click);
+    const closeMenu = () => setClick(false);
+
     return (
         <>
             <header className="header">
@@ -12,21 +18,25 @@ const Navbar = () => {
                             Louitzkie
                         </Link>
 
-                        <div className="hamburger">
-                            <span>
-                                <FaBars />
-                            </span>
-                        </div>
+                        <button className="navBtn" onClick={handleClick}>
+                            {click ? <FaTimes /> : <FaBars />}
+                        </button>
 
-                        <ul className="navUl ">
+                        <ul className={click ? "navUl navOpen" : " navUl"}>
                             <li>
-                                <NavLink to="/">Home</NavLink>
+                                <NavLink onClick={closeMenu} to="/">
+                                    Home
+                                </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/project">Project</NavLink>
+                                <NavLink onClick={closeMenu} to="/project">
+                                    Project
+                                </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/contact">Contact</NavLink>
+                                <NavLink onClick={closeMenu} to="/contact">
+                                    Contact
+                                </NavLink>
                             </li>
                         </ul>
                     </nav>

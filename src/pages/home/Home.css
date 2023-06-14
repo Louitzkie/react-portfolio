@@ -3,6 +3,8 @@
     padding-block: 10rem;
     position: relative;
     overflow: hidden;
+    background-color: var(--DarkBlueIntro);
+    z-index: 99;
 }
 
 .hero .flex {
@@ -10,14 +12,14 @@
 }
 
 .hero__img {
-    position: absolute;
+    position: relative;
     background-repeat: no-repeat;
     z-index: -9999;
-    right: -10%;
+    right: -45%;
 }
 
 .hero__content {
-    width: min(65ch, 100% - 4rem);
+    width: min(70ch, 100% - 4rem);
 }
 
 .hero__content-title {

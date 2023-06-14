@@ -5,6 +5,7 @@ import {
     FaInstagramSquare,
     FaFacebookSquare,
 } from "react-icons/fa";
+
 import HeroImg from "../../../public/Hero-template.png";
 
 const Hero = () => {
